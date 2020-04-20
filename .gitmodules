@@ -1,0 +1,4 @@
+
+[submodule "themes/chunky-poster"]
+	path = themes/chunky-poster
+	url = git@github.com:2ttech/hugo-theme-chunky-poster.git
