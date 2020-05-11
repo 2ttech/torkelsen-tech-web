@@ -4,6 +4,7 @@ authors:
 title: "Why you should consider using Academic for Hugo"
 date: "2020-04-20"
 description: "A look at when to use static websites and why it should be used more."
+draft: true
 tags:
 - static-website
 - hugo

@@ -1,0 +1,19 @@
+theme: "theme-tt"
+
+nav:
+  description: "Open source enthusiast and freelance consultant with extensive DevOps experience. Loves to explore new technologies."
+  image: /img/avatar.png
+
+  contactLinks:
+  - icon: "linkedin-in"
+    icon_pack: "fab"
+    name: "Contact Me"
+    link: "https://linkedin.com/2ttech"
+  - icon: "github-alt"
+    icon_pack: "fab"
+    name: "DM Me"
+    link: "https://github.com/2ttech"
+
+  # button:
+  #   link: https://themes.3rdwavemedia.com/
+  #   text: Get in Touch

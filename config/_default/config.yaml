@@ -1,0 +1,15 @@
+title: "Torkelsen Tech"
+baseurl: "https://torkelsen.tech"
+copyright: ""
+theme: "devblog"
+summaryLength: 30
+paginate: 5
+
+mainSections:
+- blog
+
+# taxonomies:
+#   tag: "tags"
+#   category: "categories"
+#   publication_type: "publication_types"
+#   author: "authors"

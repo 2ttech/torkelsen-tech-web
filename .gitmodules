@@ -1,7 +1,3 @@
-
-[submodule "themes/chunky-poster"]
-	path = themes/chunky-poster
-	url = git@github.com:2ttech/hugo-theme-chunky-poster.git
 [submodule "themes/devblog"]
 	path = themes/devblog
 	url = git@github.com:2ttech/hugo-devblog-theme.git
