@@ -1,0 +1,44 @@
+# Build hugo static web site and deploy to Azure Storage account
+
+name: Build and publish preview
+
+on: push
+
+jobs:
+  build-and-publish-draft:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    # Authentication
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS  }}
+
+    # Setup
+    - name: Setup hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: latest
+        extended: true
+
+    # Build
+    - name: Build hugo
+      run: hugo -D
+
+    # Deploy
+    - name: Deploy hugo
+      run: hugo deploy
+      env:
+        AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT_DRAFT }}
+        AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY_DRAFT }}
+    
+    # Purge CDN
+    - name: Purge CDN
+      uses: azure/CLI@v1
+      with:
+        azcliversion: latest
+        inlineScript: |
+          az cdn endpoint purge --content-paths /* --ids $AZURE_CDN_RESOURCE_ID
+      env:
+        AZURE_CDN_RESOURCE_ID: ${{ secrets.AZURE_CDN_RESOURCE_ID_DRAFT }}
