@@ -1,10 +1,10 @@
 # Build hugo static web site and deploy to Azure Storage account
 
-name: Publish preview
+name: Publish production
 
 on:
   push:
-    branches-ignore:
+    branches:
     - master
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
 
     # Build
     - name: Build hugo
-      run: hugo -D -e staging
+      run: hugo -e production --minify
 
     # Deploy
     - name: Deploy hugo
