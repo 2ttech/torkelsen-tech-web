@@ -8,6 +8,11 @@ paginate: 5
 mainSections:
 - blog
 
+deployment:
+  targets:
+    name: azure
+    URL: "azblob://$web"
+
 # taxonomies:
 #   tag: "tags"
 #   category: "categories"
