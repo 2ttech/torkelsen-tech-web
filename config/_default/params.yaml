@@ -8,10 +8,10 @@ nav:
   - icon: "linkedin-in"
     icon_pack: "fab"
     name: "Contact Me"
-    link: "https://linkedin.com/2ttech"
+    link: "https://linkedin.com/in/terjetorkelsen"
   - icon: "github-alt"
     icon_pack: "fab"
-    name: "DM Me"
+    name: "Check code"
     link: "https://github.com/2ttech"
 
   # button:
