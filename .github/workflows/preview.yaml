@@ -10,8 +10,21 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Set production
+      uses: allenevans/set-env@v1.0.0
+      with:
+        HUGO_ENVIRONMENT: 'production'
+      if: ${{ github.ref == "master" }}
+
+    - name: Set preview
+      uses: allenevans/set-env@v1.0.0
+      with:
+        HUGO_ENVIRONMENT: 'staging'
+      if: ${{ github.ref != "master" }}
+
     # Authentication
-    - uses: azure/login@v1
+    - name: Azure Login
+      uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS  }}
 
@@ -24,7 +37,7 @@ jobs:
 
     # Build
     - name: Build hugo
-      run: hugo -D
+      run: hugo -D -e ${HUGO_ENVIRONMENT}
 
     # Deploy
     - name: Deploy hugo

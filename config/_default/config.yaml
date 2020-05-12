@@ -1,6 +1,5 @@
 title: "Torkelsen Tech"
-baseurl: "https://torkelsen.tech"
-copyright: ""
+baseurl: "/"
 theme: "devblog"
 summaryLength: 30
 paginate: 5
