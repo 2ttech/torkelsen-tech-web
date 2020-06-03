@@ -1,3 +1,6 @@
 [submodule "themes/devblog"]
 	path = themes/devblog
 	url = git@github.com:2ttech/hugo-devblog-theme.git
+[submodule "themes/devcard"]
+	path = themes/devcard
+	url = git@github.com:2ttech/hugo-devcard-theme.git
