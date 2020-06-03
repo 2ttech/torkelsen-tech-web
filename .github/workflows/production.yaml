@@ -2,16 +2,16 @@
 
 name: Publish production
 
-on:
-  push:
-    branches:
-    - master
+on: push
 
 jobs:
   build-and-publish-draft:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: 'true'
+        token: ${{ secrets.CHECKOUT_PAT  }}
 
     # Authentication
     - name: Azure Login
