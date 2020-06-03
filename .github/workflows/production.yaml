@@ -5,7 +5,7 @@ name: Publish production
 on: push
 
 jobs:
-  build-and-publish-draft:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -34,8 +34,8 @@ jobs:
     - name: Deploy hugo
       run: hugo deploy
       env:
-        AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT_DRAFT }}
-        AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY_DRAFT }}
+        AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
+        AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
     
     # Purge CDN
     - name: Purge CDN
@@ -45,4 +45,4 @@ jobs:
         inlineScript: |
           az cdn endpoint purge --content-paths /* --ids $AZURE_CDN_RESOURCE_ID
       env:
-        AZURE_CDN_RESOURCE_ID: ${{ secrets.AZURE_CDN_RESOURCE_ID_DRAFT }}
+        AZURE_CDN_RESOURCE_ID: ${{ secrets.AZURE_CDN_RESOURCE_ID }}
