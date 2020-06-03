@@ -1,11 +1,8 @@
 title: "Torkelsen Tech"
 baseurl: "/"
-theme: "devblog"
-summaryLength: 30
-paginate: 5
-
-mainSections:
-- blog
+theme: "devcard"
+summaryLength: 20
+paginate: 6
 
 deployment:
   targets:

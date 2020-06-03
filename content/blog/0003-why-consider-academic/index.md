@@ -10,8 +10,6 @@ tags:
 - hugo
 categories:
 - websites
-series:
-- "Creating Hugo website"
 ---
 
 When creating a new site with Hugo one of the first important choices that has to be made is which theme to use. There are many great themes, but maybe Academic is the best starting theme for now?
