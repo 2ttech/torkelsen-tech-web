@@ -4,7 +4,7 @@ nav:
   description: "Open source enthusiast and freelance consultant with extensive DevOps experience. Loves to explore new technologies."
   image: /img/avatar.png
 
-  contactLinks:
+  contact:
   - icon: "linkedin-in"
     icon_pack: "fab"
     name: "Contact Me"
