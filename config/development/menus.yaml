@@ -1,0 +1,9 @@
+main:
+- name: Home
+  url: /
+  pre: home
+  weight: 10
+- name: Blog
+  url: /blog
+  pre: bookmark
+  weight: 20

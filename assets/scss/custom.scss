@@ -1,0 +1,31 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(/svg/sprite.svg);
+}
+.icon-dot-net {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-go {
+  width: 32px;
+  height: 32px;
+  background-position: -48px 0;
+}
+.icon-microsoftazure {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.icon-terraform {
+  width: 32px;
+  height: 32px;
+  background-position: -144px 0;
+}
+.icon-kubernetes {
+  width: 32px;
+  height: 32px;
+  background-position: -192px 0;
+}
+

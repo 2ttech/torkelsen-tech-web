@@ -28,42 +28,42 @@ header:
 # - blog
 ---
 
-## Experience
+## Skills
 
-This list is still work in progress. Will update with more soon...
+After many years working as both backend developer and tech lead I've accumulated a wide range of skills. List would be quite long to list them all, but these are some of the technologies I have worked with lately.
 
 {{< div class="row" columns="col-6 col-lg-3" >}}
 
-{{< skill icons="fas.copyright" title="C#" >}}
+{{< skill customIcons="dot-net" title="C#" >}}
   Backend programming in C# with ASP.NET and ASP.NET Core. Experience with advanced dependency injection configurations with Autofac, real time messaging with SignalR and creating cloud native applications.
 {{< /skill >}}
 
-<!-- {{< skill icons="google" title="Go" >}}
-  List skills/technologies here. You can change the icon above to any of the 1500+ [FontAwesome 5 free icons](https://fontawesome.com/) available. Aenean commodo ligula eget dolor.
+{{< skill customIcons="go" title="Go" >}}
+  Programming go restapi's with Goa framework and different console applications using cobra. Using terraform and kubernetes libraries to make tools that simplify developers workflow.
 {{< /skill >}}
 
-{{< skill icons="windows" title="Azure" >}}
-  List skills/technologies here. You can change the icon above to any of the 1500+ [FontAwesome 5 free icons](https://fontawesome.com/) available. Aenean commodo ligula eget dolor.
+{{< skill customIcons="microsoftazure" icons="aws" title="Cloud" >}}
+  Worked with Azure for over 5 years and AWS for 3 years. Extensive knowledge on configuring and running IaaS solutions, architecture, governance and cost- and access-control.
 {{< /skill >}}
 
-{{< skill icons="aws" title="AWS" >}}
-  List skills/technologies here. You can change the icon above to any of the 1500+ [FontAwesome 5 free icons](https://fontawesome.com/) available. Aenean commodo ligula eget dolor.
-{{< /skill >}} -->
+{{< skill customIcons="kubernetes" title="Kubernetes" >}}
+  Installing, upgrading, securing and maintaining Kubernetes clusters. Installing and upgrading common resources for logging and monitoring.
+{{< /skill >}}
 
-{{< skill icons="php" title="Terraform" >}}
+{{< skill customIcons="terraform" title="Terraform" >}}
   Deploying all infrastructure as code and configuring secure state storage. Open sourcing tool to run terraform module deployments. 
 {{< /skill >}}
 
-<!-- {{< skill icons="npm gulp grunt" title="SecDevOps" >}}
-  List skills/technologies here. You can change the icon above to any of the 1500+ [FontAwesome 5 free icons](https://fontawesome.com/) available. Aenean commodo ligula eget dolor.
+{{< skill icons="fas.shield-alt fas.magic" title="SecDevOps" >}}
+  Configuring CI/CD pipelines in Azure DevOps, Github actions, Gitlab or TeamCity. Doing security scanning of container images and code with OWasp or similar tools.
 {{< /skill >}}
 
-{{< skill icons="html5 css3-alt" title="HTML & CSS" >}}
-  List skills/technologies here. You can change the icon above to any of the 1500+ [FontAwesome 5 free icons](https://fontawesome.com/) available. Aenean commodo ligula eget dolor.
+{{< skill icons="react" title="React.JS" >}}
+  Dynamic websites with React.JS. There are too many frontend frameworks to learn them all so focusing on React.JS to learn one properly.
 {{< /skill >}}
 
-{{< skill icons="sitemap" title="Architecture" >}}
-  List skills/technologies here. You can change the icon above to any of the 1500+ [FontAwesome 5 free icons](https://fontawesome.com/) available. Aenean commodo ligula eget dolor.
+<!-- {{< skill icons="fas.sitemap" title="Architecture" >}}
+  Software and infrastructure architecture. 
 {{< /skill >}} -->
 
 {{< /div >}}
